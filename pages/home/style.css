@@ -6,6 +6,7 @@
 
 :root {
   --white: #ffffff;
+  --gray-800: #212121;
   --gray-600: #525252;
   --gray-500: #49535a;
   --gray-400: #687985;
@@ -29,7 +30,7 @@ button {
 }
 
 nav {
-  width: 70vw !important;
+  width: 73.125rem !important;
   height: 6vw;
 }
 nav div {
@@ -81,7 +82,7 @@ nav div div {
 
 header {
   max-width: 100vw !important;
-  height: 90vh;
+  height: 40.375rem;
   background-color: var(--gray-500);
   position: relative;
   padding: 0 !important;
@@ -93,7 +94,7 @@ header {
 header article {
   position: absolute;
   height: 100%;
-  width: 70vw;
+  width: 73.125rem;
   align-items: center;
 }
 header article div {
@@ -130,7 +131,8 @@ header > div {
   justify-content: center;
   align-items: flex-start;
 }
-.content-carrosel button {
+
+.info-button {
   width: 10.31rem;
   height: 3rem;
   border-radius: 99px;
@@ -138,7 +140,8 @@ header > div {
   color: var(--white);
   margin-left: 1.07rem;
 }
-.content-carrosel button:hover {
+
+.info-button:hover {
   background-color: var(--pink-400);
 }
 
@@ -150,14 +153,14 @@ header > div {
 }
 .element-img img:first-child {
   z-index: 2;
-  width: 100%;
+  position: absolute;
 }
 .element-img img:last-child {
   z-index: 1;
   position: absolute;
-  top: 33%;
-  left: -17%;
-  height: 232px;
+  top: 26%;
+  left: -7%;
+  height: 210px;
 }
 
 .span-carrosel {
@@ -187,12 +190,10 @@ main {
 }
 
 #about-company {
-  width: 70vw;
-  height: 111.9375rem;
+  width: 73.125rem;
 }
 #about-company section {
-  height: 33.3333333333%;
-  border: 2px solid black;
+  height: 36rem;
 }
 
 #service-tittle {
@@ -249,7 +250,7 @@ main {
 }
 
 #characteristics {
-  align-items: center;
+  align-items: end;
   height: 100%;
 }
 #characteristics div h2 {
@@ -289,4 +290,41 @@ main {
 }
 #characteristics-img img {
   width: 100%;
+}
+
+#attendance {
+  margin-bottom: 158px;
+}
+#attendance > div {
+  position: relative;
+}
+#attendance div {
+  height: 100%;
+}
+#attendance div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#attendance div div:last-child {
+  position: absolute;
+  right: -4%;
+  padding-bottom: 20px;
+}
+#attendance div div:last-child h2 {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 2.375rem;
+  color: var(--gray-500);
+  line-height: 45px;
+}
+#attendance div div:last-child p {
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--gray-800);
+  line-height: 27px;
+}
+#attendance div div:last-child button {
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
