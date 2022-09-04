@@ -199,7 +199,8 @@ main {
   height: 20vh;
   align-content: center;
 }
-#service-tittle h2, #service-tittle span {
+#service-tittle h2,
+#service-tittle span {
   justify-content: center;
   display: flex;
 }
@@ -221,7 +222,8 @@ main {
   align-items: center;
   flex-direction: column;
 }
-#services-type div img, #services-type div p {
+#services-type div img,
+#services-type div p {
   margin-bottom: 1.875rem;
 }
 #services-type div h3 {
@@ -244,4 +246,47 @@ main {
   font-weight: 400;
   font-size: 1.125rem;
   color: var(--gray-600);
+}
+
+#characteristics {
+  align-items: center;
+  height: 100%;
+}
+#characteristics div h2 {
+  text-transform: capitalize;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 2.375rem;
+  color: var(--gray-500);
+  line-height: 60px;
+}
+#characteristics div p {
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--gray-600);
+  line-height: 27px;
+}
+#characteristics div div {
+  display: flex;
+  flex-direction: column;
+}
+#characteristics div div span {
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--gray-600);
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.check-icon {
+  height: 26px;
+}
+
+#characteristics-img {
+  padding-right: 0;
+}
+#characteristics-img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
