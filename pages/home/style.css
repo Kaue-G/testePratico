@@ -6,6 +6,7 @@
 
 :root {
   --white: #ffffff;
+  --gray-900: #262626;
   --gray-800: #212121;
   --gray-700: #3a3a3a;
   --gray-600: #525252;
@@ -303,6 +304,8 @@ main {
 }
 #characteristics-img img {
   width: 100%;
+  border-radius: 15px;
+  box-shadow: 19px 10px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #attendance {
@@ -318,6 +321,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+#attendance div div img {
+  border-radius: 15px;
+  box-shadow: 19px 10px 2px 1px rgba(0, 0, 0, 0.2);
 }
 #attendance div div:last-child {
   position: absolute;
@@ -411,6 +418,90 @@ main {
   position: absolute;
   z-index: 1;
   height: 210px;
-  bottom: 5%;
+  bottom: 6%;
   right: 23%;
+}
+
+#blog {
+  width: 73.125rem;
+  height: 51.5625rem;
+}
+#blog section {
+  width: 73.125rem;
+  height: 100%;
+}
+#blog section img {
+  width: 360px;
+  height: 237px;
+  border-radius: 8px;
+}
+#blog section > div:first-child {
+  align-items: center;
+  text-align: center;
+  height: 10.5rem;
+}
+#blog section > div:first-child h1 {
+  color: var(--gray-900);
+  font-size: 1.75rem;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: "Montserrat", "sans-serif";
+  text-transform: capitalize;
+}
+#blog section > div:last-child {
+  width: 100%;
+  height: 180px;
+  justify-content: center;
+}
+#blog section > div:last-child button {
+  margin-top: 52px;
+  color: var(--white);
+}
+
+#blog-elements {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-element h3 {
+  height: 58px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: var(--pink-500);
+  font-size: 1.1875rem;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Montserrat", "sans-serif";
+}
+.blog-element p {
+  margin-bottom: 0;
+  height: 130px;
+  color: var(--gray-600);
+  font-size: 1.1875rem;
+  line-height: 27px;
+  font-weight: 400;
+  font-family: "Lato", "sans-serif";
+}
+.blog-element button {
+  color: var(--gray-600);
+  font-size: 1.1875rem;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Montserrat", "sans-serif";
+  text-align: start;
+  border-bottom: 4px solid #dcdcdc;
+  width: 100%;
+  height: 56px;
+}
+
+#maps {
+  width: 100%;
+  height: 385px;
+}
+#maps iframe {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
