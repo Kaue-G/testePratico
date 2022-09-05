@@ -38,16 +38,12 @@ button {
 nav {
     // width: 71.31rem !important;
     width: 73.125rem !important;
-    height: 6vw;
+    height: 100px;
 
     div {
         width: 100%;
         height: 100%;
         flex-wrap: nowrap !important;
-
-        img {
-            width: 60% !important;
-        }
 
         div {
             display: flex;
@@ -508,10 +504,10 @@ main {
         height: 100%;
 
         img {
-                width: 360px;
-                height: 237px;
-                border-radius: 8px;
-            }
+            width: 360px;
+            height: 237px;
+            border-radius: 8px;
+        }
 
         >div:first-child {
             align-items: center;
@@ -532,6 +528,7 @@ main {
             width: 100%;
             height: 180px;
             justify-content: center;
+
             button {
                 margin-top: 52px;
                 color: var(--white);
@@ -591,6 +588,81 @@ main {
         width: 100%;
         height: 100%;
     }
+
     width: 100%;
     height: 385px;
+}
+
+footer {
+    width: 100%;
+    height: 255px;
+    background-color: var(--gray-500);
+
+    section {
+        width: 73.125rem !important;
+
+        >div:last-child {
+            width: 100%;
+            height: 105px;
+            justify-content: space-between;
+            align-items: center;
+
+            div:first-child {
+                width: 160px;
+                height: 50px;
+
+                img {
+                    width: 100% !important;
+                }
+            }
+
+            div:last-child {
+                width: 50px;
+                height: 50px;
+
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+#footer-info {
+    height: 150px;
+    color: var(--white);
+    border-bottom: 1px solid #687177;
+    align-items: center;
+}
+
+#address {
+    p {
+        color: var(--white);
+        font-size: 1.125rem;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: "Lato", 'sans-serif';
+    }
+}
+
+#contact {
+    p {
+        text-transform: capitalize;
+    }
+}
+
+#social-media {
+    justify-content: end;
+    display: flex;
+
+    img {
+        margin-left: 20px;
+        filter: invert(1);
+    }
+}
+
+.social-media-svg {
+    height: 25px;
+
+
 }
