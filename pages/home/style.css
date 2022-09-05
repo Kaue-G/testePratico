@@ -196,12 +196,12 @@ main {
 #about-company {
   width: 73.125rem;
 }
-#about-company section {
+#about-company section:first-child {
   height: 36rem;
 }
 
 #service-tittle {
-  height: 20vh;
+  height: 13.5625rem;
   align-content: center;
 }
 #service-tittle h1,
@@ -258,6 +258,7 @@ main {
 
 #characteristics-section {
   position: relative;
+  height: 30rem;
 }
 
 #characteristics {
@@ -307,6 +308,7 @@ main {
 
 #attendance {
   margin-bottom: 158px;
+  height: 33rem;
 }
 #attendance > div {
   position: relative;
@@ -409,14 +411,15 @@ main {
 #institution-video section div:last-child img {
   z-index: 4;
   border-radius: 15px;
+  filter: drop-shadow(0px 13px 13.5px rgba(0, 0, 0, 0.23));
 }
 
 #video-background {
   position: absolute;
   z-index: 1;
-  height: 210px;
+  height: 200px;
   bottom: 6%;
-  right: 23%;
+  right: 22%;
 }
 
 #blog {

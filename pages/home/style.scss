@@ -223,15 +223,13 @@ main {
     width: 73.125rem;
     // height: 111.9375rem;
 
-    section {
+    section:first-child {
         height: 36rem;
-        // margin-bottom: 80px;
-        // border: 2px solid black;
     }
 }
 
 #service-tittle {
-    height: 20vh;
+    height: 13.5625rem;
     align-content: center;
 
     h1,
@@ -297,6 +295,7 @@ main {
 
 #characteristics-section {
     position: relative;
+    height: 30rem;
 }
 
 #characteristics {
@@ -357,6 +356,7 @@ main {
 
 #attendance {
     margin-bottom: 158px;
+    height: 33rem;
 
     >div {
         position: relative;
@@ -475,6 +475,7 @@ main {
             img {
                 z-index: 4;
                 border-radius: 15px;
+                filter: drop-shadow(0px 13px 13.5px rgba(0, 0, 0, 0.23));
             }
 
             // video {
@@ -490,9 +491,9 @@ main {
 #video-background {
     position: absolute;
     z-index: 1;
-    height: 210px;
+    height: 200px;
     bottom: 6%;
-    right: 23%;
+    right: 22%;
 }
 
 #blog {
