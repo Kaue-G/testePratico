@@ -7,6 +7,7 @@
 :root {
   --white: #ffffff;
   --gray-800: #212121;
+  --gray-700: #3a3a3a;
   --gray-600: #525252;
   --gray-500: #49535a;
   --gray-400: #687985;
@@ -139,6 +140,11 @@ header > div {
   background-color: var(--pink-500);
   color: var(--white);
   margin-left: 1.07rem;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--white);
+  line-height: 27px;
 }
 
 .info-button:hover {
@@ -200,22 +206,25 @@ main {
   height: 20vh;
   align-content: center;
 }
-#service-tittle h2,
-#service-tittle span {
+#service-tittle h1,
+#service-tittle p {
   justify-content: center;
   display: flex;
 }
-#service-tittle h2 {
+#service-tittle h1 {
   font-family: "Montserrat", "sans-serif";
   font-weight: 700;
   font-size: 1.75rem;
   color: var(--gray-500);
+  line-height: 50px;
+  margin: 0;
 }
-#service-tittle span {
+#service-tittle p {
   font-family: "Lato", "sans-serif";
   font-weight: 400;
   font-size: 1.125rem;
   color: var(--gray-500);
+  line-height: 20px;
 }
 
 #services-type div {
@@ -249,9 +258,13 @@ main {
   color: var(--gray-600);
 }
 
+#characteristics-section {
+  position: relative;
+}
+
 #characteristics {
-  align-items: end;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
 }
 #characteristics div h2 {
   text-transform: capitalize;
@@ -308,23 +321,96 @@ main {
 }
 #attendance div div:last-child {
   position: absolute;
-  right: -4%;
+  right: -2%;
   padding-bottom: 20px;
 }
 #attendance div div:last-child h2 {
   font-family: "Montserrat", "sans-serif";
   font-weight: 700;
-  font-size: 2.375rem;
+  font-size: 2.25rem;
   color: var(--gray-500);
   line-height: 45px;
 }
 #attendance div div:last-child p {
   font-family: "Lato", "sans-serif";
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--gray-800);
   line-height: 27px;
 }
 #attendance div div:last-child button {
   margin-left: 0;
+  width: 12.25rem;
+  height: 48px;
+}
+
+#institution-video {
+  background-color: var(--gray-700);
+  position: relative;
+  width: 100%;
+  height: 46.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#institution-video > img:first-child {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 37%;
+     object-position: 0 37%;
+  opacity: 3%;
+}
+#institution-video section {
+  position: absolute;
+  width: 73.125rem;
+  height: 100%;
+}
+#institution-video section div:first-child {
+  position: relative;
+  height: 11.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#institution-video section div:first-child h1 {
+  position: absolute;
+  top: 50px;
+  text-transform: capitalize;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 2.1875rem;
+  color: var(--white);
+  line-height: 67px;
+}
+#institution-video section div:first-child p {
+  position: absolute;
+  top: 105px;
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--white);
+  line-height: 35px;
+}
+#institution-video section div:last-child {
+  height: 28.125rem;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+}
+#institution-video section div:last-child img {
+  z-index: 4;
+  border-radius: 15px;
+}
+
+#video-background {
+  position: absolute;
+  z-index: 1;
+  height: 210px;
+  bottom: 5%;
+  right: 23%;
 }/*# sourceMappingURL=style.css.map */
