@@ -1,11 +1,13 @@
 version: '2'
 
 services:
-   db:
+   db_wordpress:
      image: mysql:5.7
      volumes:
-       - db_data:/var/lib/mysql
-     restart: always
+       - db_data:/var/lib/mysql-wordpress
+
+    #  ports:
+    #   - "3306:3306"
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
        MYSQL_DATABASE: wordpress
@@ -14,13 +16,12 @@ services:
 
    wordpress:
      depends_on:
-       - db
+       - db_wordpress
      image: wordpress:latest
      ports:
        - "8000:80"
-     restart: always
      environment:
-       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_HOST: db_wordpress:3306
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
